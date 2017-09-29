@@ -22,7 +22,7 @@ module.exports = (env) => {
 	
 			sourceMapFilename: '[file].map',
 	
-			path: path.resolve(__dirname,  'public'), // string
+			path: path.resolve(__dirname,  'public', 'dist'), // string
 			// the target directory for all output files
 			// must be an absolute path (use the Node.js path module)
 	
@@ -115,7 +115,8 @@ module.exports = (env) => {
 	
 		devServer: {
 			contentBase: path.resolve(__dirname, 'public'),
-			historyApiFallback: true
+			historyApiFallback: true,
+			publicPath: '/dist/'
 		}
 	}
 };
