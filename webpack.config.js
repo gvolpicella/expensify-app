@@ -22,7 +22,7 @@ module.exports = (env) => {
 			filename: 'bundle.js', // string
 			// the filename template for entry chunks
 	
-			sourceMapFilename: 'bundle.map',
+			sourceMapFilename: '[file].map',
 	
 			path: path.resolve(__dirname,  'public'), // string
 			// the target directory for all output files
@@ -34,7 +34,6 @@ module.exports = (env) => {
 		module: {
 			
 			rules: [
-			// rules for modules (configure loaders, parser options, etc.)
 				// scripts
 				{
 					test: /\.js$/,
@@ -46,10 +45,9 @@ module.exports = (env) => {
 						}
 					}
 				},
-				// styles CSS / SASS / SCSS
+				// styles
 				{
 					test: /\.(s?css)$/,
-					fallback: 'style-loader',
 					use: CSSExtract.extract({
 						use :  [
 							{
@@ -73,12 +71,12 @@ module.exports = (env) => {
 						]
 					})
 				},	
-				// IMAGES
+				// images
 				{
 					test: /\.(png|svg|jpg|gif)$/,
 					use: [ 'file-loader' ]
 				},
-				// FONTS
+				// fonts
 				{
 					test: /\.(woff|woff2|eot|ttf|otf)$/,
 					use: [ 'file-loader' ]
