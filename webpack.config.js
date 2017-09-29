@@ -1,7 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const webpack = require('webpack'); //to access built-in plugins
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+//const webpack = require('webpack'); //to access built-in plugins
 
 const path = require('path');
 
@@ -86,13 +84,13 @@ module.exports = (env) => {
 	
 		plugins: [
 			//new ExtractTextPlugin({ filename: 'style.css', disable: false, allChunks: true }),
-			CSSExtract,
+			CSSExtract
 			// avoid console error on minyifing react files
-			new webpack.DefinePlugin({
-				'process.env': {
-					NODE_ENV: JSON.stringify('production')
-				}
-			}),
+			// new webpack.DefinePlugin({
+			// 	'process.env': {
+			// 		NODE_ENV: JSON.stringify('production')
+			// 	}
+			// }),
 			// new webpack.optimize.UglifyJsPlugin({
 			// 	sourceMap: true,
 			// 	warnings: false,
