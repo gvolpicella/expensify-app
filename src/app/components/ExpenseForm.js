@@ -65,7 +65,7 @@ class ExpenseForm extends React.Component {
             <div>
                 { this.state.error && <p className="error">{ this.state.error }</p>}
                 <form onSubmit={this.onSubmit}>
-                    <label for="description">Description</label>
+                    <label htmlFor="description">Description</label>
                     <input 
                         name="description" 
                         type="text"
@@ -74,7 +74,7 @@ class ExpenseForm extends React.Component {
                         value={this.state.description}
                         onChange={this.onDescriptionChange}
                     /><br/><br/>
-                    <label for="amount">Amount</label>
+                    <label htmlFor="amount">Amount</label>
                     <input 
                         name="amount" 
                         type="text"
@@ -91,7 +91,7 @@ class ExpenseForm extends React.Component {
                         isOutsideRange={ () => {false} }
                         displayFormat="DD MMM YYYY"
                     /><br/><br/>
-                    <label for="notes">Notes</label>
+                    <label htmlFor="notes">Notes</label>
                     <textarea 
                         name="note" 
                         placeholder="Enter a note for your expenses" 

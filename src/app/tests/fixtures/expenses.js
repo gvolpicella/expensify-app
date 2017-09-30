@@ -1,11 +1,10 @@
 import moment from 'moment';
-import expensesReducer from '../../reducers/expenses';
 
 export default [{
   id: '1',
   description: 'gum',
   note: '',
-  amount: 115,
+  amount: 195,
   createdAt: 0
 },{
   id: '2',

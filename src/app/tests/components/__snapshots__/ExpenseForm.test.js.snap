@@ -6,7 +6,7 @@ exports[`should render ExpenseForm correctly 1`] = `
     onSubmit={[Function]}
   >
     <label
-      for="description"
+      htmlFor="description"
     >
       Description
     </label>
@@ -21,7 +21,7 @@ exports[`should render ExpenseForm correctly 1`] = `
     <br />
     <br />
     <label
-      for="amount"
+      htmlFor="amount"
     >
       Amount
     </label>
@@ -112,7 +112,7 @@ exports[`should render ExpenseForm correctly 1`] = `
     <br />
     <br />
     <label
-      for="notes"
+      htmlFor="notes"
     >
       Notes
     </label>
@@ -139,7 +139,7 @@ exports[`should render ExpenseForm correctly with expense data 1`] = `
     onSubmit={[Function]}
   >
     <label
-      for="description"
+      htmlFor="description"
     >
       Description
     </label>
@@ -154,7 +154,7 @@ exports[`should render ExpenseForm correctly with expense data 1`] = `
     <br />
     <br />
     <label
-      for="amount"
+      htmlFor="amount"
     >
       Amount
     </label>
@@ -245,7 +245,7 @@ exports[`should render ExpenseForm correctly with expense data 1`] = `
     <br />
     <br />
     <label
-      for="notes"
+      htmlFor="notes"
     >
       Notes
     </label>
@@ -272,7 +272,7 @@ exports[`should render error for invalid form submission 1`] = `
     onSubmit={[Function]}
   >
     <label
-      for="description"
+      htmlFor="description"
     >
       Description
     </label>
@@ -287,7 +287,7 @@ exports[`should render error for invalid form submission 1`] = `
     <br />
     <br />
     <label
-      for="amount"
+      htmlFor="amount"
     >
       Amount
     </label>
@@ -378,7 +378,7 @@ exports[`should render error for invalid form submission 1`] = `
     <br />
     <br />
     <label
-      for="notes"
+      htmlFor="notes"
     >
       Notes
     </label>
@@ -410,7 +410,7 @@ exports[`should render error for invalid form submission 2`] = `
     onSubmit={[Function]}
   >
     <label
-      for="description"
+      htmlFor="description"
     >
       Description
     </label>
@@ -425,7 +425,7 @@ exports[`should render error for invalid form submission 2`] = `
     <br />
     <br />
     <label
-      for="amount"
+      htmlFor="amount"
     >
       Amount
     </label>
@@ -516,7 +516,7 @@ exports[`should render error for invalid form submission 2`] = `
     <br />
     <br />
     <label
-      for="notes"
+      htmlFor="notes"
     >
       Notes
     </label>
